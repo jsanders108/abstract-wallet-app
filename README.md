@@ -1,6 +1,6 @@
 # Abstract Wallet Generator App
 
-This Solidity program is a simple "Hello World" program that demonstrates the basic syntax and functionality of the Solidity programming language. The purpose of this program is to serve as a starting point for those who are new to Solidity and want to get a feel for how it works.
+This React app allows a user to generate an abstract Ethereum wallet account and then use it to send and/or receive ETH. Abstract wallet accounts provide advantages over traditional externally owned wallet accounts (EOA). Specifically, they are more secure and programmable, which gives users greater control over their assets. 
 
 ## Description
 
