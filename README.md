@@ -1,6 +1,6 @@
 # Abstract Wallet Generator App
 
-This React app allows a user to generate an abstract Ethereum wallet account and then use it to send and/or receive ETH. Abstract wallet accounts provide advantages over traditional externally owned wallet accounts (EOA). Specifically, they are more secure and programmable, which gives users greater control over their assets. 
+This React app allows a user to generate an abstract wallet account and then use it to send and/or receive MATIC. Abstract wallet accounts provide advantages over traditional externally owned wallet accounts (EOA). Specifically, they are more secure and programmable, which gives users greater control over their assets. 
 
 ## Description
 
@@ -12,7 +12,7 @@ The mechanism used is the factory method: if a user wants to create a new abstra
 
 ### Creating a new abstract wallet account
 
-To run this program, you need to have MetaMask installed (with the Polygon Mumbai testnet network added to it). To get some testnet Matic, go to the following faucet: https://faucet.polygon.technology. To get started using the app to create abstract wallet accounts, go to the following website: https://abstract-wallet-app.netlify.app.
+To run this program, you need to have MetaMask installed (with the Polygon Mumbai testnet network added to it). To get some testnet MATIC, go to the following faucet: https://faucet.polygon.technology. To get started using the app to create abstract wallet accounts, go to the following website: https://abstract-wallet-app.netlify.app.
 
 Once you are on the app's website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., HelloWorld.sol). Copy and paste the following code into the file:
 
