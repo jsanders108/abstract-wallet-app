@@ -4,7 +4,7 @@ This React app allows a user to generate a smart contract wallet using account a
 
 ## Description
 
-This app uses two primary Solidity contracts: SimpleAccountFactory.sol, and SimpleAccount.sol; they are both in the reference implementation mentioned in EIP-4337. After downloading  and compiling these contracts (along with some additional interface and import files) from Eth-Infinitism, SimpleAccountFactory.sol was deployed to the Polygon Mumbai testnet using Hardhat. 
+This app uses two primary Solidity contracts: SimpleAccountFactory.sol, and SimpleAccount.sol; they are both in the account abstraction implementation contracts mentioned in EIP-4337. After downloading  and compiling these contracts (along with some additional interface and import files) from Eth-Infinitism, SimpleAccountFactory.sol was deployed to the Polygon Mumbai testnet using Hardhat. 
 
 To view the repository containing the account abstraction implementation contracts mentioned in EIP-4337, go to the following website: https://github.com/eth-infinitism/account-abstraction/tree/develop/contracts/samples
 
