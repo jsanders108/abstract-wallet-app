@@ -4,9 +4,9 @@ This React app allows a user to generate an abstract Ethereum wallet account and
 
 ## Description
 
-This app uses two primary Solidity contracts in the reference implementation mentioned in EIP-4337: SimpleAccountFactory.sol, and SimpleAccount.sol. After downloading  and compiling these contracts (along with some additional interface and import files) from Eth-Infinitism, SimpleAccountFactory.sol was deployed to the Polygon Mumbai testnet using Hardhat. 
+This app uses two primary Solidity contracts: SimpleAccountFactory.sol, and SimpleAccount.sol; they are in the reference implementation mentioned in EIP-4337. After downloading  and compiling these contracts (along with some additional interface and import files) from Eth-Infinitism, SimpleAccountFactory.sol was deployed to the Polygon Mumbai testnet using Hardhat. 
 
-If a user wants to create a new abstract wallet account, they must call a function in the SimpleAccountFactory contract, which then deploys a brand new abstract wallet account. 
+The mechanism used is the factory method: if a user wants to create a new abstract wallet account, they must call a function in the SimpleAccountFactory contract, which then deploys a brand new abstract wallet account. A user may create as many new accounts as they wish. 
 
 ## Getting Started
 
