@@ -14,7 +14,9 @@ The mechanism used is the factory method: if a user wants to create a new abstra
 
 ### Creating a new abstract wallet account
 
-To run this program, it is required to have MetaMask installed (with the Polygon Mumbai testnet network added to it). To get some testnet MATIC, go to the following faucet: https://faucet.polygon.technology. To get started using the app to create abstract wallet accounts, go to the following website: https://abstract-wallet-app.netlify.app.
+To run this program, it is required to have MetaMask installed (with the Polygon Mumbai testnet network added to it). To get some testnet MATIC, go to the following faucet: https://faucet.polygon.technology. 
+
+To get started using the app to create abstract wallet accounts, go to the following website: https://abstract-wallet-app.netlify.app.
 
 Once you are on the app's website, connect to MetaMask by clicking on the "Connect MetaMask" button. Your account address should appear in red text under the button. Next, to create a new abstract wallet account, click on the "Generate" button in the "Generate a New Wallet" section. MetaMask will then pop up for you to approve this transaction (you will need some Mumbai testnet MATIC to do this). After deployment to the Mumbai network, your new abstract wallet account address will appear in red text under the "Generate" button. 
 
