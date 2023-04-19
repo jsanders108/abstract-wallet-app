@@ -4,11 +4,13 @@ This React app allows a user to generate an abstract Ethereum wallet account and
 
 ## Description
 
-This program is a simple contract written in Solidity, a programming language used for developing smart contracts on the Ethereum blockchain. The contract has a single function that returns the string "Hello World!". This program serves as a simple and straightforward introduction to Solidity programming, and can be used as a stepping stone for more complex projects in the future.
+This app uses two primary Solidity contracts in the reference implementation mentioned in EIP-4337: SimpleAccountFactory.sol, and SimpleAccount.sol. After downloading  and compiling these contracts (along with some additional interface and import files) from Eth-Infinitism, SimpleAccountFactory.sol was deployed to the Polygon Mumbai testnet using Hardhat. 
+
+If a user wants to create a new abstract wallet account, they must call a function in the SimpleAccountFactory contract, which then deploys a brand new abstract wallet account. 
 
 ## Getting Started
 
-### Executing program
+### Creating a new abstract wallet account
 
 To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at https://remix.ethereum.org/.
 
