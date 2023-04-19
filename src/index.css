@@ -1,0 +1,142 @@
+html, body {
+    margin: 0;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    background: #e6e6ff;
+}
+     
+
+/* LAYOUT */
+
+.header--container {
+    display: flex; 
+    flex-direction: column; 
+    background-image: linear-gradient(to right, #330011 , #990033); 
+    padding: 20px 10px; 
+    margin-bottom: 30px; 
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 25px; 
+}
+
+.metamask-connect--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px; 
+}
+
+.new-wallet--container,
+.use-wallet--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 600px;
+    margin: 0 auto; 
+    border: solid maroon 5px;
+    border-radius: 8px; 
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background: whitesmoke;
+}
+
+.new-wallet--container {
+    margin-bottom: 70px; 
+}
+
+.use-wallet--container {
+    padding-bottom: 20px; 
+}
+
+.divider {
+    width: 300px;
+    border-bottom: solid black 3px; 
+    margin: 25px 0px;
+}
+
+
+/* TYPOGRAPHY */
+
+.header--title {
+    color: whitesmoke;
+}
+
+.connection-message{
+    margin: 10px;
+    color: red; 
+}
+
+.new-wallet--title, 
+.use-wallet--title {
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 10px;
+}
+
+.new-wallet--address{
+    margin-bottom: 0px;
+    padding-bottom: 15px; 
+    color: red; 
+}
+
+.connect-confirmation {
+    color: red; 
+    margin-bottom: 10px; 
+}
+
+.wallet-balance {
+    margin-bottom: 0px; 
+}
+
+.deposit-funds--title,
+.send-funds--title {
+    margin-top: 0px; 
+}
+
+
+/* LABELS & INPUTS */
+
+.address-input,
+.number-input {
+    width: 245px;
+    margin: 15px 0px;
+    padding: 5px 5px;  
+    font-size: 15px;    
+}
+
+.recipient {
+    margin-top: 0px; 
+}
+
+.deposit-label,
+.send-label {
+    font-size: 15px;
+    margin-bottom: -10px; 
+}
+
+.deposit-label {
+    margin-left: -40px; 
+}
+
+.send-label {
+    margin-left: -55px; 
+}
+
+
+/* BUTTONS */
+
+.blue-btn {
+    background: darkblue;
+    color: white;
+    padding: 10px 20px; 
+    font-size: 15px; 
+    border: none;
+    border-radius: 7px; 
+    margin-bottom: 10px; 
+    cursor: pointer; 
+}
+           
+.blue-btn:active {
+    box-shadow: inset 10px 10px 10px -3px rgba(0, 0, 0, 0.7);
+    background: lightcoral; 
+}
+    
