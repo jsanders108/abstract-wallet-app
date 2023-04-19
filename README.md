@@ -8,7 +8,7 @@ This app uses two primary Solidity contracts: SimpleAccountFactory.sol, and Simp
 
 To view the repository containing the account abstraction implementation contracts mentioned in EIP-4337, go to the following website: https://github.com/eth-infinitism/account-abstraction/tree/develop/contracts/samples
 
-To view the SimpleAccountFactory contract on Mumbai, go to the following website: https://mumbai.polygonscan.com/address/0x631de80Af334568eb2b372096b38e2F024cAB8Cc
+To view the SimpleAccountFactory contract deployed on Mumbai, go to the following website: https://mumbai.polygonscan.com/address/0x631de80Af334568eb2b372096b38e2F024cAB8Cc
 
 The mechanism used by this app is the factory method: if a user wants to create a new smart contract wallet account, they must call a function in the SimpleAccountFactory contract, which then deploys a brand new smart contract wallet account on the Mumbai testnet. A user may create as many new accounts as they wish. 
 
