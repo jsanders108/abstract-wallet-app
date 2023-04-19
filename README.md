@@ -1,6 +1,6 @@
 # Smart Contract Wallet Generator App
 
-This React app allows a user to generate a smart contract wallet using account abtraction--and then use it to send and/or receive MATIC. Smart contract wallet accounts provide advantages over traditional externally owned wallet accounts (EOA). Specifically, they are more secure and programmable, which gives users greater control over their assets. 
+This React app allows a user to generate a smart contract wallet using account abstraction--and then use it to send and/or receive MATIC. Smart contract wallet accounts provide advantages over traditional externally owned wallet accounts (EOA). Specifically, they are more secure and programmable, which gives users greater control over their assets. 
 
 ## Description
 
