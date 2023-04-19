@@ -33,6 +33,5 @@ To send funds, enter the desired amount and the recipient address in the appropr
 
 ## Author
 
-Jason Sanders
-
+Jason Sanders  
 jsanders108@hotmail.com
