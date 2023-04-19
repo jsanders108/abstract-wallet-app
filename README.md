@@ -1,6 +1,6 @@
-# Abstract Wallet Generator App
+# Smart Contract Wallet Generator App
 
-This React app allows a user to generate an abstract wallet account and then use it to send and/or receive MATIC. Abstract wallet accounts provide advantages over traditional externally owned wallet accounts (EOA). Specifically, they are more secure and programmable, which gives users greater control over their assets. 
+This React app allows a user to generate a smart contract wallet using account abtraction--and then use it to send and/or receive MATIC. Smart contract wallet accounts provide advantages over traditional externally owned wallet accounts (EOA). Specifically, they are more secure and programmable, which gives users greater control over their assets. 
 
 ## Description
 
@@ -8,23 +8,23 @@ This app uses two primary Solidity contracts: SimpleAccountFactory.sol, and Simp
 
 To view the SimpleAccountFactory contract on Mumbai, go to the following website: https://mumbai.polygonscan.com/address/0x631de80Af334568eb2b372096b38e2F024cAB8Cc
 
-The mechanism used is the factory method: if a user wants to create a new abstract wallet account, they must call a function in the SimpleAccountFactory contract, which then deploys a brand new abstract wallet account on the Mumbai testnet. A user may create as many new accounts as they wish. 
+The mechanism used is the factory method: if a user wants to create a new smart contract wallet account, they must call a function in the SimpleAccountFactory contract, which then deploys a brand new smart contract wallet account on the Mumbai testnet. A user may create as many new accounts as they wish. 
 
 ## Getting Started
 
-### Creating a new abstract wallet account
+### Creating a new smart contract wallet account
 
 To run this program, it is required to have MetaMask installed (with the Polygon Mumbai testnet network added to it). To get some testnet MATIC, go to the following faucet: https://faucet.polygon.technology. 
 
-To get started using the app to create abstract wallet accounts, go to the following website: https://abstract-wallet-app.netlify.app.
+To get started using the app to create smart contract wallet accounts, go to the following website: https://abstract-wallet-app.netlify.app.
 
-Once you are on the app's website, connect to MetaMask by clicking on the "Connect MetaMask" button. Your account address should appear in red text under the button. Next, to create a new abstract wallet account, click on the "Generate" button in the "Generate a New Wallet" section. MetaMask will then pop up for you to approve this transaction (you will need some Mumbai testnet MATIC to do this). After deployment to the Mumbai network, your new abstract wallet account address will appear in red text under the "Generate" button. 
+Once you are on the app's website, connect to MetaMask by clicking on the "Connect MetaMask" button. Your account address should appear in red text under the button. Next, to create a new smart contract wallet account, click on the "Generate" button in the "Generate a New Wallet" section. MetaMask will then pop up for you to approve this transaction (you will need some Mumbai testnet MATIC to do this). After deployment to the Mumbai network, your new smart contract wallet account address will appear in red text under the "Generate" button. 
 
 Copy your new wallet's address and save it somewhere. 
 
-### Using an abstract wallet account 
+### Using a smart contract wallet account 
 
-To use an abstract wallet account, first connect to it by entering its address and clicking on the "Get Balance" button. The account's current balance will be displayed under the button. 
+To use a smart contract wallet account, first connect to it by entering its address and clicking on the "Get Balance" button. The account's current balance will be displayed under the button. 
 
 To deposit funds, which will be necessary if it is a new account, enter the desired amount in the input box in the "Deposit Funds" section and click on the "Deposit" button. MetaMask will then pop up for you to approve this transaction.
 
