@@ -1,25 +1,25 @@
 import {useState} from 'react'
-import {SIMPLE_WALLET_ABI} from '../SimpleWalletABI'
 import {ethers} from 'ethers'
+import {SIMPLE_WALLET_ABI} from '../SimpleWalletABI'
 
 
 function UseWallet() {
 
-    // In the variable below, state is created to hold the wallet's balance.
+    // In the variable below, state is created to hold the abstract wallet's balance.
     const [walletBalance, setWalletBalance] = useState(null)
     
-    // In the variables below, state is created to store the user's wallet address,
+    // In the variables below, state is created to store the user's abstract wallet address,
     // and the address to which the user wishes to send funds.
     const [walletAddress, setWalletAddress] = useState([])
     const [sendAddress, setSendAddress] = useState([])
 
     // In the variables below, state is created to store the amount of funds to be deposited 
-    // to the wallet, as well as the amount of funds to be sent to a recipient.
+    // to the abstract wallet, as well as the amount of funds to be sent to a recipient.
     const [sendAmount, setSendAmount] = useState(0)
     const [depositAmount, setDepositAmount] = useState(0)
     
 
-    // This function records the user's wallet address (as entered by the user),
+    // This function records the user's abstract wallet address (as entered by the user),
     // and stores it to state (walletAddress).
     function handleAddressEntry(event){
         setWalletAddress(event.target.value)
@@ -37,14 +37,14 @@ function UseWallet() {
         setSendAmount(event.target.value)
     }
 
-    // This function records the amount of funds the user wishes to deposit into their wallet,
+    // This function records the amount of funds the user wishes to deposit into their abstract wallet,
     // (as entered by the user), and stores it to state (depositAmount).
     function handleDepositAmountEntry(event){
         setDepositAmount(event.target.value)
     }
 
 
-    // This function uses Ethers.js to access the user's wallet account and returns the balance by 
+    // This function uses Ethers.js to access the user's abstract wallet account and returns the balance by 
     // calling the function "getDeposit". The balance is then stored in state (walletBalance). 
     const getWalletBalance = async () => { 
         const provider = new ethers.providers.Web3Provider(window.ethereum)
@@ -55,7 +55,7 @@ function UseWallet() {
         setWalletBalance(adjustedBalance)
     }
 
-    // This function uses Ethers.js to access the user's wallet account and deposits funds to it by 
+    // This function uses Ethers.js to access the user's abstract wallet account and deposits funds to it by 
     // calling the function "addDeposit". The wallet's balance state is then updated accordingly by 
     // calling the "getWalletBalance" function (to update state). 
     const depositFunds = async () => { 
@@ -69,7 +69,7 @@ function UseWallet() {
         getWalletBalance()
     }
 
-    // This function uses Ethers.js to accesses the user's wallet account and transfers funds from it by 
+    // This function uses Ethers.js to accesses the user's abstract wallet account and transfers funds from it by 
     // calling the function "withdrawDepositTo".
     // Note that only the wallet's owner has access to this function.
     // The wallet's balance state is then updated accordingly by calling the "getWalletBalance" function (to update state). 
@@ -90,7 +90,7 @@ function UseWallet() {
             <div className="use-wallet--container">
                 <h1 className="use-wallet--title">Use Wallet</h1>
 
-                {/* The user inputs their wallet address and it is captured dynamically in state (walletAddress) */}
+                {/* The user inputs their abstract wallet address and it is captured dynamically in state (walletAddress) */}
                 <input 
                     type="text"
                     className="address-input" 
@@ -100,7 +100,7 @@ function UseWallet() {
                     onChange={handleAddressEntry} 
                 />
 
-                {/* The user clicks the "GETBALANCE" button to call the "getWalletBalance" function. Their wallet balance is 
+                {/* The user clicks the "GETBALANCE" button to call the "getWalletBalance" function. Their abstract wallet balance is 
                 then painted to the user-interface */}
                 <button className="blue-btn" onClick={getWalletBalance}>GET BALANCE</button>
                 <p className="wallet-balance">{walletBalance != null ? `Wallet Balance = ${walletBalance} MATIC` : ""}</p>
@@ -109,7 +109,7 @@ function UseWallet() {
 
                 <h2 className="deposit-funds--title">Deposit Funds</h2>
 
-                {/* The user inputs the amount of funds they would like to deposit into their wallet and it is captured 
+                {/* The user inputs the amount of funds they would like to deposit into their abstract wallet and it is captured 
                 dynamically in state (depositAmount) */}           
                 <label className="deposit-label" >Enter amount of MATIC to deposit:</label>
                 <input 
@@ -122,7 +122,7 @@ function UseWallet() {
                 />
 
                 {/* The user clicks the "DEPOSIT" button to call the "depositFunds" function. The amound of funds they entered
-                into "depositAmount" is then deposited into their wallet account.*/}
+                into "depositAmount" is then deposited into their abstract wallet account.*/}
                 <button className="blue-btn" onClick={depositFunds}>DEPOSIT</button>
 
                 <div className="divider"></div>
