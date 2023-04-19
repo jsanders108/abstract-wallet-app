@@ -24,11 +24,14 @@ Copy your new wallet's address and save it somewhere.
 
 ### Using an abstract wallet account 
 
+To use an abstract wallet account, first connect to it by entering its address and clicking on the "Get Balance" button. The account's current balance will be displayed under the button. 
 
-To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.4" (or another compatible version), and then click on the "Compile HelloWorld.sol" button.
+To deposit funds, which will be necessary if it is a new account, enter the desired amount in the input box in the "Deposit Funds" section and click on the "Deposit" button. MetaMask will then pop up for you to approve this transaction.
+
+To send funds, enter the desired amount and the recipient address in the appropriate input boxes in the "Send Funds" section and click on the "Send" button. MetaMask will then pop up for you to approve this transaction.
 
 
+## Author
 
-## Authors
-
-Metacrafter Chris  
+Jason Sanders
+jsanders108@hotmail.com
