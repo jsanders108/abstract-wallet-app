@@ -14,7 +14,7 @@ The mechanism used is the factory method: if a user wants to create a new abstra
 
 To run this program, you need to have MetaMask installed (with the Polygon Mumbai testnet network added to it). To get some testnet Matic, go to the following faucet: https://faucet.polygon.technology. To get started using the app to create abstract wallet accounts, go to the following website: https://abstract-wallet-app.netlify.app.
 
-Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., HelloWorld.sol). Copy and paste the following code into the file:
+Once you are on the app's website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., HelloWorld.sol). Copy and paste the following code into the file:
 
 ```javascript
 pragma solidity ^0.8.4;
