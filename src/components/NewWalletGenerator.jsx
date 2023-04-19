@@ -6,11 +6,11 @@ import {FACTORY_CONTRACT_ADDRESS} from '../FactoryContractAddress'
 
 function NewWalletGenerator(props) {
 
-    // This state (newWalletAddress) is where the newly generated abstract wallet account will be stored. 
+    // This state (newWalletAddress) is where the newly generated wallet account will be stored. 
     const [newWalletAddress, setNewWalletAddress] = useState("")
   
     // This function (createSimpleAccount) calls the "createAccount" function in the SimpleAccountFactory.sol
-    // contract to create a new abstract wallet account (SimpleAccount.sol). 
+    // contract to create a new wallet account (SimpleAccount.sol). 
     const createSimpleAccount = async () => { 
         
         // Salt is required to generate a new SimpleAccount; this variable (randomSalt) generates a random number for salt. 
@@ -21,13 +21,13 @@ function NewWalletGenerator(props) {
         const signer = provider.getSigner()
         const contract = new ethers.Contract(FACTORY_CONTRACT_ADDRESS, FACTORY_CONTRACT_ABI, signer)
 
-        // The new abstract wallet account is created via the Factory contract and a transaction receipt is generated.
+        // The new wallet account is created via the Factory contract and a transaction receipt is generated.
         // The owner address of the new wallet is passed in through "props.account" (which is the MetaMask account).
         const txResponse = await contract.createAccount(props.account, randomSalt)
         const txReceipt = await txResponse.wait()
         console.log(txReceipt)
 
-        // The new abstract wallet account's address is recorded in the state variable "newWalletAddress".
+        // The new wallet account's address is recorded in the state variable "newWalletAddress".
         setNewWalletAddress(txReceipt.events[0].address)
     }
     
@@ -40,7 +40,7 @@ function NewWalletGenerator(props) {
                 {/* The "createSimpleAccount" function is called when the user clicks on the "GENERATE" button. */}
                 <button className="blue-btn" onClick={createSimpleAccount}>GENERATE</button>
 
-                {/* The new abstract wallet account address is painted to the user-interface. */}
+                {/* The new wallet account address is painted to the user-interface. */}
                 <p className="new-wallet--address">{newWalletAddress && `Address = ${newWalletAddress}`}</p>
             </div>
         </div>
