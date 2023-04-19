@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import {ethers} from 'ethers'
-import {FACTORY_CONTRACT_ABI} from "../FactoryContractABI"
-import {FACTORY_CONTRACT_ADDRESS} from "../FactoryContractAddress"
+import {FACTORY_CONTRACT_ABI} from '../FactoryContractABI'
+import {FACTORY_CONTRACT_ADDRESS} from '../FactoryContractAddress'
 
 
 function NewWalletGenerator(props) {
