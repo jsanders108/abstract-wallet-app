@@ -12,26 +12,18 @@ The mechanism used is the factory method: if a user wants to create a new abstra
 
 ### Creating a new abstract wallet account
 
-To run this program, you need to have MetaMask installed (with the Polygon Mumbai testnet network added to it). To get some testnet MATIC, go to the following faucet: https://faucet.polygon.technology. To get started using the app to create abstract wallet accounts, go to the following website: https://abstract-wallet-app.netlify.app.
+To run this program, it is required to have MetaMask installed (with the Polygon Mumbai testnet network added to it). To get some testnet MATIC, go to the following faucet: https://faucet.polygon.technology. To get started using the app to create abstract wallet accounts, go to the following website: https://abstract-wallet-app.netlify.app.
 
-Once you are on the app's website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., HelloWorld.sol). Copy and paste the following code into the file:
+Once you are on the app's website, connect to MetaMask by clicking on the "Connect MetaMask" button. Your account address should appear in red text under the button. Next, to create a new abstract wallet account, click on the "Generate" button in the "Generate a New Wallet" section. MetaMask will then pop up for you to approve this transaction (you will need some Mumbai testnet MATIC to do this). After deployment to the Mumbai network, your new abstract wallet account address will appear in red text under the "Generate" button. 
 
-```javascript
-pragma solidity ^0.8.4;
+Copy your new wallet's address and save it somewhere. 
 
-contract HelloWorld {
-    function sayHello() public pure returns (string memory) {
-        return "Hello World!";
-    }
-}
+### Using your wallet
 
-```
 
 To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.4" (or another compatible version), and then click on the "Compile HelloWorld.sol" button.
 
-Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "HelloWorld" contract from the dropdown menu, and then click on the "Deploy" button.
 
-Once the contract is deployed, you can interact with it by calling the sayHello function. Click on the "HelloWorld" contract in the left-hand sidebar, and then click on the "sayHello" function. Finally, click on the "transact" button to execute the function and retrieve the "Hello World!" message.
 
 ## Authors
 
