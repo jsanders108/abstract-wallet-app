@@ -103,7 +103,7 @@ function UseWallet() {
                 {/* The user clicks the "GETBALANCE" button to call the "getWalletBalance" function. Their wallet balance is 
                 then painted to the user-interface */}
                 <button className="blue-btn" onClick={getWalletBalance}>GET BALANCE</button>
-                <p className="wallet-balance">{walletBalance != null ? `Wallet Balance = ${walletBalance} ETH` : ""}</p>
+                <p className="wallet-balance">{walletBalance != null ? `Wallet Balance = ${walletBalance} MATIC` : ""}</p>
 
                 <div className="divider"></div>
 
@@ -111,7 +111,7 @@ function UseWallet() {
 
                 {/* The user inputs the amount of funds they would like to deposit into their wallet and it is captured 
                 dynamically in state (depositAmount) */}           
-                <label className="deposit-label" >Enter amount of ETH to deposit:</label>
+                <label className="deposit-label" >Enter amount of MATIC to deposit:</label>
                 <input 
                     type="number"
                     step="any"
@@ -131,7 +131,7 @@ function UseWallet() {
 
                 {/* The user inputs the amount of funds they would like to send to another wallet and it is captured 
                 dynamically in state (sendAmount) */}   
-                <label className="send-label" >Enter amount of ETH to send:</label>
+                <label className="send-label" >Enter amount of MATIC to send:</label>
                 <input 
                     type="number"
                     step="any"
