@@ -16,7 +16,7 @@ The mechanism used by this app is the factory method: if a user wants to create 
 
 ### Creating a new smart contract wallet account
 
-To run this app, it is required to have MetaMask installed (with the Polygon Mumbai testnet network added to it). To get some testnet MATIC, go to the following faucet: https://faucet.polygon.technology. 
+To use this app, it is required to have MetaMask installed (with the Polygon Mumbai testnet network added to it). To get some testnet MATIC, go to the following faucet: https://faucet.polygon.technology. 
 
 To get started using the app to create smart contract wallet accounts, go to the following website: https://abstract-wallet-app.netlify.app.
 
