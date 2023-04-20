@@ -22,7 +22,7 @@ To get started using the app to create smart contract wallet accounts, go to the
 
 Once you are on the app's website, connect to MetaMask by clicking on the "Connect MetaMask" button. Your account address should appear in red text under the button. Next, to create a new smart contract wallet account, click on the "Generate" button in the "Generate a New Wallet" section. MetaMask will then pop up for you to approve this transaction (you will need some Mumbai testnet MATIC to do this). After deployment to the Mumbai network, your new smart contract wallet account address will appear in red text under the "Generate" button. 
 
-Copy your new wallet's address and save it somewhere. 
+Copy and save your new wallet's address. 
 
 ### Using a smart contract wallet account 
 
